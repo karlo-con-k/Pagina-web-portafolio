@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width =device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    
     <title>Mi portafolios</title>
+
     <link rel="stylesheet" href="estilo_trabajos_destacados.css">
 </head>
 
@@ -21,9 +28,9 @@
 
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html"> Inicio </a></li>
+                    <li><a href="index.html">       Inicio         </a></li>
                     <li><a href="mi_trayecto.html"> Mi trayectoria </a></li>
-                    <li><a href="currículum.html"> Currículum </a></li>
+                    <li><a href="currículum.html">  Currículum     </a></li>
                 </ul>
             </nav>
 
@@ -38,76 +45,122 @@
         <div class="main-inicio">
             <section>
  
-                <h1 style="font-size: 3em;"> Unet para segmentar <br> de tumores
-                    cerebrales</h1>
-                <!-- <h2 style="padding-top: 2em;" > Introduccion </h2> -->
+                <h1 style="font-size: 3em;"> U-Net para segmentar <br> de tumores cerebrales</h1>   
 
-                <p style="padding-top: 1em; font-family:'Courier New', Courier, monospace;"> Implementé un modelo UNet para segmentar tumores en imágenes de resonancia magnética (MRI) del cerebro humano, 
-                    utilizando la base de datos de kaggle <a href = "https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation" class="enlace-rosa">MRI Brain Segmentation </a> que consta de 110
-                    volúmenes de resonancia magnética de igual número de pacientes.
+                <p style="padding-top: 1em; font-family:'Courier New', Courier, monospace;"> 
+                    Implementé un modelo U-Net para segmentar tumores en imágenes de resonancia 
+                    magnética (MRI) del cerebro humano, utilizando la base de datos de kaggle 
+                    <a href = "https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation" 
+                    class="enlace-rosa"> MRI Brain Segmentation </a> que consta de 110 volúmenes 
+                    de resonancia magnética de igual número de pacientes.
                 </p>
 
-
-                <!-- <h2> Resumen general del trabajo </h2> -->
-                <p> En la base de datos anterior, nos encontramos con los siguientes datos: la imagen de la izquierda es una resonancia de un paciente con un tumor, la cual será la entrada de nuestra 
-                    red U-Net. Buscamos que nuestra imagen de salida tenga la estructura de la imagen de la derecha, que es una segmentación del tumor de la imagen de la izquierda.
+                <p> 
+                    En la base de datos anterior, nos encontramos con los siguientes datos: la 
+                    imagen de la izquierda es una resonancia de un paciente con un tumor, la cual 
+                    será la entrada de nuestra red U-Net. Buscamos que nuestra imagen de salida 
+                    tenga la estructura de la imagen de la derecha, que es una segmentación del 
+                    tumor de la imagen de la izquierda.
                 </p>
 
                 <br>
                 <br>
-                <img src="Img/Img_(2_1)/imagen1_de_(2_1).png" alt="Imagen de resonancia vs imagen de segmentacion de tumor" height="300"  width="600" />
+                <img src="Img/Img_(2_1)/imagen1_de_(2_1).png" 
+                     alt="Imagen de resonancia vs imagen de segmentacion de tumor" 
+                     height="300"  
+                     width="600" />
                 <br>
                 <br>
                 
-                <p> Después de entrenar la red neuronal, obtuvimos los siguientes resultados. Las dos primeras imágenes son de la base de datos, mientras que las últimas dos son el resultado de la red neuronal.
+                <p> 
+                    Después de entrenar la red neuronal, obtuvimos los siguientes resultados. Las 
+                    dos primeras imágenes son de la base de datos, mientras que las últimas dos son
+                    el resultado de la red neuronal.
                 </p>
                 
                 <br>
                 <br>
-                <img src="Img/Img_(2_1)/imagen2_de__(2_1).png" alt="Imagenes de resonancia, segmentacion de tumor, segmentacion de tumor generada por la red entrenada y diagrama de calor resultante de la red" height="300"  width="600" />
+                <img src="Img/Img_(2_1)/imagen2_de__(2_1).png" 
+                     alt="Imagenes de resonancia, segmentacion de tumor, segmentacion de tumor 
+                          generada por la red entrenada y diagrama de calor resultante de la red"
+                     height="300" 
+                     width="600" />
                 <br>
                 <br>
 
-                <p> Estas son las gráficas de la exactitud y la función de pérdida de la red neuronal UNET a lo largo del entrenamiento.</p>
+                <p> 
+                    Estas son las gráficas de la exactitud y la función de pérdida de la red 
+                    neuronal U-Net a lo largo del entrenamiento.
+                </p>
 
                 <br>
                 <br>
+
                 <table style="margin: auto;">
                     <tr>
-                        <td class="img-cel"> <img src="Img/Img_(2_1)/imagen3_de__(2_1).png" alt="Grafica de exactitud a lo largo del entrenamiento de la red" height="300"  width="400" /> </td>
-                        <td class="img-cel"> <img src="Img/Img_(2_1)/imagen4_de__(2_1).png" alt="Grafica de funcion de perdida a lo largo del entrenamiento de la red" height="300"  width="400" /> </td>
+                        <td class="img-cel"> 
+                            <img src="Img/Img_(2_1)/imagen3_de__(2_1).png" 
+                                 alt="Grafica de exactitud a lo largo del entrenamiento de la red" 
+                                 height="300"  
+                                 width="400" /> 
+                        </td>
+
+                        <td class="img-cel"> 
+                            <img src="Img/Img_(2_1)/imagen4_de__(2_1).png" 
+                                 alt="Grafica de funcion de perdida a lo largo del 
+                                      entrenamiento de la red" 
+                                 height="300"  
+                                 width="400" /> 
+                        </td>
                     </tr>
                 </table> 
                 <br>
 
-                <p> El trabajo completo se encuentra en el siguiente <a href="PDFs/proyecto(1_1).pdf"" class="enlace-rosa"> jupyter notebook </a></p>
-            
+                <p> 
+                    El trabajo completo se encuentra en el siguiente 
+                    <a href="PDFs/U-Net_Tumores.pdf"" class="enlace-rosa"> jupyter notebook PDF. </a>
+                </p>
             </section>
         </div>
     </main>
 
     <hr color="#FFC0CB">
+    
     <footer>
         <div class="logos">
             <a href="https://github.com/karlo-con-k"><i class="fa-brands fa-github"></i> </a>
         </div>
-        <p style="padding-left: 0.6em;"><a href="https://github.com/karlo-con-k">karlo_con_k</a></p>
+
+        <p style="padding-left: 0.6em;">
+            <a href="https://github.com/karlo-con-k">karlo_con_k</a>
+        </p>
 
         <div class = "logos">
-            <a href = "https://www.linkedin.com/in/karlo-jair-guevara-diaz/"><i class="fa-brands fa-linkedin"></i> </a>
+            <a href = "https://www.linkedin.com/in/karlo-jair-guevara-diaz/">
+                <i class="fa-brands fa-linkedin"></i> 
+            </a>
         </div>
-        <p style="padding-left: 0.6em;"> <a href = "https://www.linkedin.com/in/karlo-jair-guevara-diaz/">karlo-jair-guevara-diaz</a></p>
+
+        <p style="padding-left: 0.6em;"> 
+            <a href = "https://www.linkedin.com/in/karlo-jair-guevara-diaz/">
+                karlo-jair-guevara-diaz
+            </a>
+        </p>
 
 
         <div class="logos">
             <i class="fa-solid fa-mobile-retro"></i>
         </div>
+
         <p style="padding-left: 0.6em;"> <a href="tellto:+524626213874">+52 462 621 38 74</a> </p>
 
         <div class="logos">
             <i class="fa-solid fa-envelope"></i>
         </div>
-        <p style="padding-left: 0.6em;"><a href="mailto:karlo.guevara@cimat.mx">karlo.guevara@cimat.mx</a></p>
+
+        <p style="padding-left: 0.6em;">
+            <a href="mailto:karlo.guevara@cimat.mx"> karlo.guevara@cimat.mx </a>
+        </p>
     </footer>
 </body>
 </html>
