@@ -28,11 +28,9 @@
 
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html"> Inicio </a></li>
-                    <li><a href="mi_trayectoria.html"> Mi trayectoria </a></li>
-                    <li><a href="currículum.html"> Currículum </a></li>
-                    <!-- <li><a href = "#Proyectos" > Proyectos </a></li> -->
-                    <!-- <li><a href = "#contacto" >    Contacto  </a></li> -->
+                    <li><a href="index.html">           Homepage </a></li>
+                    <li><a href="mi_trayectoria.html"> My career </a></li>
+                    <li><a href="currículum.html">        CV     </a></li>
                 </ul>
             </nav>
 
@@ -47,27 +45,27 @@
     <main>
         <div class="main-inicio">
             <section>
-                <h1 style="font-size: 3em;"> Series de tiempo  no <br> independientes</h1>
-                <!-- <h2 style="padding-top: 2em;" > Introduccion </h2> -->
+                <h1 style="font-size: 3em;"> Non-independent time <br> series</h1>
 
                 <p style="padding-top: 1em; font-family:'Courier New', Courier, monospace;"> 
-                    Investigue las herramientas AR(p), MA(q), ARMA(p,q) y teoría de extremos para 
-                    tratar con series de tiempo no independientes. Estas herramientas son los 
-                    modelos autorregresivo de orden p  o AR(p), MA(q), ARMA(p,q) y la teoría de 
-                    extremos aplicada a series de tiempo. También veremos la función de 
-                    autocorrelación, la cual nos ayudará a determinar cuándo es viable aplicar 
-                    estos métodos. Presentaremos algunos ejemplos de cómo se ajustan estos métodos 
-                    a datos reales y los resultados obtenidos usando estas herramientas.
+                    I investigated AR(p), MA(q), ARMA(p,q) tools and extreme value theory to deal 
+                    with non-independent time series. These tools are autoregressive models of 
+                    order p or AR(p), MA(q), ARMA(p,q) and extreme value theory applied to time 
+                    series. We will also look at the autocorrelation function, which will help us 
+                    determine when it is feasible to apply these methods. We will present some 
+                    examples of how these methods are fitted to real data and the results obtained 
+                    using these tools.
                 </p>
 
 
 
                 <p> 
-                    El proceso de Media Móvil Autoregresiva representa el valor X_t en funcion de 
-                    los datos pasados mas ruido blanco mas una aproximacion de la medias. Es decir 
-                    junta los procesos AR(p) y MA(q). Esto se explora a profundidad en el PDF y 
-                    presentacion del final. Un ejemplo de ARMA(1,1) con parametroes theta = 0.9 
-                    y sigma = 0.9 y su correlograma son.  
+                    The Autoregressive Moving Average process represents the value X_t as a 
+                    function of past data, plus white noise and an approximation of the mean. In 
+                    other words, it combines the AR(p) and MA(q) processes. This is explored in 
+                    depth in the final PDF and presentation. An example of an ARMA(1,1) process 
+                    with parameters theta = 0.9 and sigma = 0.9 and its correlogram are also 
+                    presented.
                 </p>
 
                 <table style="margin: auto;">
@@ -87,11 +85,12 @@
                     </tr>
                 </table> 
 
-                <p> Pero lo que nos interesa es aplicar ARMA(p,q) a los datos del nivel medio 
-                    global del mar de los ultimos años. Por la estructura de esta serie de tiempo 
-                    no se podia trabajar con ellos, pero note que podia trabajar con la serie de 
-                    tiempo del cambio nivel medio global del mar. La siguiente imagenes son la 
-                    serie de tiempo del nivel medio global del mar y la de sus diferencias:
+                <p> 
+                    But what we're interested in is applying ARMA(p,q) to the data of the global 
+                    mean sea level of the last few years. Due to the structure of this time series, 
+                    we couldn't work with it directly. But I noticed that we could work with the 
+                    time series of the global mean sea level change instead. The following images 
+                    show the time series of the global mean sea level and its differences:
                 </p>
                 
                 <br>
@@ -117,11 +116,11 @@
                 <br>
 
                 <p> 
-                    Por lo que queria ajustar un modelo ARMA(p,q) a la anterior serie de tiempo. 
-                    Despues de hacer los calculos y pruebas necesarias que el mejor modelo que 
-                    ajustaba a la anterior serie de tiempo es un ARMA(4,1) con los parametros 
-                    θ1 = 0.11952744,θ2 = −0.04775842, θ3 = 0.01596729,θ40.12763155 y 
-                    ψ1 = −0.39039621. La serie de tiempo roja es el ajuste resultante:
+                    I wanted to fit an ARMA(p,q) model to the above time series. After performing 
+                    the necessary calculations and tests. I found that the best model fitting the 
+                    time series was an ARMA(4,1) with the parameters θ1 = 0.11952744, 
+                    θ2 = −0.04775842, θ3 = 0.01596729, θ4 = 0.12763155 and ψ1 = −0.39039621. 
+                    The red time series is the resulting fit.
                 </p>
 
                 <br>
@@ -130,14 +129,13 @@
                 <br>
 
                 <p> 
-                    La presentacion completa del trabajo y los comandos de R usados para el mismos 
-                    esta en este 
-                    <a href="PDFs/Presentacion_Series_de_Tiempo.pdf" class="enlace-rosa"> PDF </a> y 
-                    el trabajo completo esta en este 
+                    The complete presentation of the work and the R commands used for it are in this 
+                    <a href="PDFs/Presentacion_Series_de_Tiempo.pdf" class="enlace-rosa"> PDF </a>. 
+                    The complete work is in this  
                     <a href="PDFs/Proyecto_Series_de_Tiempo.pdf"" class="enlace-rosa"> PDF </a>. 
-                    Cave mencionar el trabajo no solo era ajustar la serie de tiempo, sino tambien 
-                    investigar el tema de series de tiempo y los respectivos modelos (ya que el 
-                    curso no abarcaba esos temas).
+                    It should be noted that the work was not only fitting the time series. It was also 
+                    about researching the topic of time series and the respective models (since the 
+                    course did not cover those topics).
                 </p>
             </section>
         </div>
